@@ -1,6 +1,6 @@
 
 def is_valid_header(header_text):
-	return ((header_text == "GIF87a") || (header_text == "GIF89a"))
+	return ((header_text == "GIF87a") or (header_text == "GIF89a"))
 
 def get_gif_size(gif_file):
 	file_data = open(gif_file, 'rb')
