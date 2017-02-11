@@ -25,6 +25,8 @@ def get_gif_size(gif_file):
 	high_height_byte = file_data.read(1)
 	integerHeight = (high_height_byte << 8) + low_height_byte
 
+	file_data.close()
+
 	return ["Height": integerHeight, "Width": integerWidth]
 
 
